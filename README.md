@@ -1,1 +1,1 @@
-# Projeto Do Blog//Point Life
+# Rascunho do Projeto "Point Life"
