@@ -1,0 +1,88 @@
+/* Estilos adicionais */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+nav ul li a {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+#blog {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#blog h2 {
+    margin-bottom: 30px;
+}
+
+.noticia {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+.noticia h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

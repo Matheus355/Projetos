@@ -1,0 +1,197 @@
+/*-----------------------------------*\
+  #edições gerais
+\*-----------------------------------*/
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------*\
+  #Cabeçalho & Menu
+\*-----------------------------------*/
+header {  /* cabeçalho */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style-type: none; /* menu sem ou com marcação  */
+}
+
+nav ul li {
+     display: inline; /* menu alinhado  */
+     margin-right: 20px; /* distância entre os menus */
+}
+
+nav ul li a {  /* configurações do texto */
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+a:hover {
+    color: #049d53; /* Cor quando passar o mouse */
+}
+
+/*-------------------------------------------------------------*\
+  Estilos comuns para todos os tamanhos de tela/responsividade
+\*-------------------------------------------------------------*/
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+    /* Ajuste o tamanho do texto do cabeçalho */
+    h1 { font-size: 1.5em; }
+    /* Ajuste o tamanho do texto do menu */
+    nav ul li a { font-size: 1em; }
+}
+/* Estilos para telas de tamanho médio 
+@media only screen and (min-width: 768px) and (max-width: 991px) { Adicione os estilos específicos para telas de tamanho médio aqui }
+Estilos para telas maiores 
+@media only screen and (min-width: 992px) { Adicione os estilos específicos para telas maiores aqui }*/
+
+
+
+/*----------------------------------------------*\
+  #posters
+\*-----------------------------------------------*/
+#blog {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#blog h2 {
+    margin-bottom: 30px;
+}
+
+#blog .btn {
+    display: inline-block;
+    background-color: #195722d7;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+#blog .btn:hover {
+        background: linear-gradient(to bottom right,#2ecc71, #1abc9c);
+        color: #333;
+}
+
+.noticia {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.noticia h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to bottom right,#2ecc71, #1abc9c);
+    color: #F3BD42;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  #Contatos
+\*-----------------------------------*/
+#contato {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-top: 3px;
+}
+
+#contato h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #195722d7;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#contato form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contato form input,
+#contato form textarea { /* configuração das bordas das caixas */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contato form button { /* configuração do botão */
+    background-color: #195722d7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+    background-color: #F3BD42;
+}
+
+
+/*-----------------------------------*\
+  #Rodapé
+\*-----------------------------------*/
+footer {
+    background-color: #005e30;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

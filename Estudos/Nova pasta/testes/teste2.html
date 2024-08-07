@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Inicial</title>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 160px;
+    top: 30px;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 20px);
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.article {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.article h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.article p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+</style></head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Artigos</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorias</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tecnologia</a>
+                        <a href="#">Viagens</a>
+                        <a href="#">Estilo de Vida</a>
+                    </div>
+                </li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="highlight">
+            <div class="container">
+                <h2>Destaques</h2>
+                <div class="article">
+                    <h3><a href="#">Conheça os Golfinhos: Maravilhas do Oceano</a></h3>
+                    <p>Descubra mais sobre os incríveis golfinhos e suas fascinantes habilidades...</p>
+                </div>
+                <div class="article">
+                    <h3><a href="#">Flores Raras: Belezas Exóticas da Natureza</a></h3>
+                    <p>Explore o mundo das flores raras e suas características únicas...</p>
+                </div>
+                <div class="article">
+                    <h3><a href="#">Frutas Azuis: Delícias Misteriosas e Saborosas</a></h3>
+                    <p>Conheça algumas das frutas azuis mais incríveis do mundo e seus benefícios...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-articles">
+            <div class="container">
+                <h2>Artigos Recentes</h2>
+                <div class="article">
+                    <h3><a href="#">A Importância da Conservação Ambiental</a></h3>
+                    <p>Entenda por que é crucial proteger o meio ambiente e como podemos contribuir...</p>
+                </div>
+                <div class="article">
+                    <h3><a href="#">Viagem ao Desconhecido: Destinos Exóticos</a></h3>
+                    <p>Explore destinos de viagem únicos e fora do comum para uma experiência inesquecível...</p>
+                </div>
+                <div class="article">
+                    <h3><a href="#">Dicas para uma Vida Saudável e Equilibrada</a></h3>
+                    <p>Descubra hábitos e práticas para manter a saúde física e mental em dia...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+
+/* Estilos adicionais para o site inteiro */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+/* Estilos comuns para todos os tamanhos de tela/responsividade */
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+    /* Ajuste o tamanho do texto do cabeçalho */
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    /* Ajuste o tamanho do texto do menu */
+    nav ul li a {
+        font-size: 1em;
+    }
+    
+}
+
+/* Estilos para telas de tamanho médio */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Adicione os estilos específicos para telas de tamanho médio aqui */
+}
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 992px) {
+    /* Adicione os estilos específicos para telas maiores aqui */
+}
+
+
+/* configurações do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 1%;
+    box-sizing: border-box;
+}
+ 
+
+ /* configurações do menu */
+nav ul {
+    list-style-type: none; /* menu sem ou com marcação  */
+}
+
+nav ul li {
+     display: inline; /* menu alinhado  */
+     margin-right: 20px; /* distância entre os menus */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+a:hover {
+    color: #049d53; /* Cor quando passar o mouse */
+}
+
+
+/* banner */
+#inicio {
+    background-image: url('https://images.pexels.com/photos/797797/pexels-photo-797797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    height: 500px; /* Altura fixa para o banner */
+}
+
+/* Para telas maiores */
+@media only screen and (min-width: 768px) {
+    .banner h2 {
+        font-size: 75px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .banner p {
+        font-size: 28px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    }
+}
+
+/* Para telas menores */
+@media only screen and (max-width: 767px) {
+    .banner h2 {
+        font-size: 60px;
+    }
+
+    .banner p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.banner {
+    position: relative;
+    z-index: 1; /* Certifique-se de que o conteúdo fique na frente da sobreposição */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    padding: 100px 0; /* Espaçamento interno */
+    background-color: rgba(0, 0, 0, 0.2); /* Cor de sobreposição semi-transparente */
+    width: 100%;
+    height: 60%;
+    
+}
+
+.linha1 {
+    width: 7cm;
+    border-top: 1px solid #fffefe;
+    margin: 0 auto 1px;
+}
+
+#inicio::before {
+    content: "";
+    background-color: rgba(0, 43, 151, 0.159); /* Cor de sobreposição semi-transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* processo de desenvolvimento */
+#processoDesenvolvimento {
+    text-align: center;
+    padding: 50px 1;
+}
+
+#processoDesenvolvimento h2 {
+    font-size: 36px;
+    color: #00763C;
+    margin-bottom: 20px;
+}
+
+.linha2 {
+    width: 9cm;
+    border-top: 2px solid gray;
+    margin: 0 auto 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.parte {
+    flex: 1;
+    max-width: 3000px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.parte h3 {
+    font-size: 23px;
+    color: #00763C;
+    margin-bottom: 10px;
+}
+
+.parte p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Estilos para as imagens */
+.parte img {
+    height: auto; /* Para manter a proporção da imagem */
+    width: 250px; /* Largura fixa para todas as imagens */
+    height: 230px; /* Altura fixa para todas as imagens */
+    border-radius: 10px; /* Borda arredondada */
+    margin-bottom: 5px; /* Espaçamento entre a imagem e o título */
+    }
+/* Estilos para telas de tamanho médio */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .parte img{
+        height: auto; /* Para manter a proporção da imagem */
+        width: 230px; /* Largura fixa para todas as imagens */
+        height: 190px; /* Altura fixa para todas as imagens */
+        border-radius: 10px; /* Borda arredondada */
+        margin-bottom: 10px; /* Espaçamento entre a imagem e o título */
+        margin-top: 20px;
+    }  }
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        
+    }
+    .parte img{
+        height: auto; /* Para manter a proporção da imagem */
+        width: 458px; /* Largura fixa para todas as imagens */
+        height: 280px; /* Altura fixa para todas as imagens */
+        border-radius: 10px; /* Borda arredondada */
+        margin-bottom: 10px; /* Espaçamento entre a imagem e o título */
+        margin-top: 20px;
+    }
+}
+
+
+
+/* chamada e citação */
+.chamada {
+    background-color: #195722d7;
+    text-align: center;
+    font-size: 39px;
+    color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+#citacao {
+    text-align: center;
+    padding: 10px 0;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 24px;
+    color: #195722d7;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+/* Estilos da seção dos posts */
+#blog {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#blog h2 {
+    margin-bottom: 30px;
+}
+
+.noticia {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+.noticia h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.noticia .btn {
+    display: inline-block;
+    background-color: #195722d7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.noticia .btn:hover {
+    background-color: #ffd700;
+}
+
+
+/* sobre */
+#recursos {
+    background-color: #f0fff5; /* Tom de azul suave */
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+.titulo {
+    margin-bottom: 40px;
+}
+
+.titulo h2 {
+    font-size: 36px;
+    color: #195722d7;
+    position: relative;
+    display: inline-block;
+}
+
+.linha3 {
+    width: 100%;
+    height: 1px;
+    background-color: #195722d7;
+    bottom: -10px;
+    left: 0;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Estilos para telas de tamanho médio */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .linha3{
+        width: 70%;
+        height: 1,5px;
+        bottom: -10px;
+        }}
+
+/* para telas menores */
+@media only screen and (max-width: 767px) {
+    .titulo h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .linha3{
+    width: 70%;
+    height: 1,5px;
+    bottom: -10px;
+    }
+    .container p {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+
+
+/* área de contato */
+
+#contato {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-top: 3px;
+}
+
+#contato h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #195722d7;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#contato form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #195722d7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contato form button {
+    background-color: #195722d7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+    background-color: #F3BD42;
+}
+
+/* footer */
+footer {
+    background-color: #005e30;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

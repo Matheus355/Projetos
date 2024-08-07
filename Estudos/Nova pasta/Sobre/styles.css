@@ -1,0 +1,229 @@
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.875);
+    color: rgb(206, 75, 75);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 42px ;
+    padding: 0px 10px;
+}
+#citacao {
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    color:  rgb(206, 75, 75);
+    font-family: cursive;
+}
+
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 992px) {
+    #sobre {
+        text-align: left;
+    }
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .imagem {
+        margin-right: 50px;
+    }
+    
+    .imagem img {
+        width: 45em;
+        height: 50em;
+    }
+    .texto{
+        .container { flex-direction: column;} /* Altera a direção do flexbox para coluna */
+    }
+    .h2{
+        text-align: start;
+        font-size: 40px;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0%;
+    }
+    
+    .texto h3{
+        color: rgb(206, 75, 75);
+        
+    }
+    .texto p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 600px;
+    }
+    
+    .autora p {
+        margin-top: 0%;
+    }
+    
+}
+
+
+
+
+/* Estilos para telas de tamanho médio */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .sobre {
+       align-items: center;
+       /* Altera a direção do flexbox para coluna */
+    }
+    .conteudo {
+        display: flex;
+        align-items: left ;
+        margin: 15%;
+        flex-direction: column;
+    }
+    
+    .imagem img { 
+        height: 728px;
+        width: 627px;
+        margin-bottom: 40px;
+    }
+    
+    .h2{
+        text-align: start;
+        font-size: 40px;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0%;
+    }
+    
+    .texto h3{
+        color: rgb(164, 28, 64);
+        margin: 0px 0px 30px;
+        text-align: left;
+        width: 100%;
+        font-size: 22px;
+        font-weight: 400;
+        position: relative;
+        white-space: pre-line;
+    }
+
+    .texto p {
+        font-size: 18px;
+        max-width: 827px;
+    }
+    
+    .autora p {
+        margin-top: 0%;
+        font-size: 16px;
+        color: #1E1E1E;
+        font-family: raleway, sans-serif;
+    }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+.conteudo {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;}
+
+#sobre {
+    text-align: left;
+   /* Altera a direção do flexbox para coluna */
+}
+
+.imagem img {
+    width: 351px;
+    height: 464px; 
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.texto {
+     margin: 20px;
+}
+}
+.texto h2{
+        text-align: start;
+        font-size: 30px;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0%;
+}
+
+.texto h3{
+        color: rgb(164, 28, 64);
+        margin: 0px 0px 30px;
+        font-size: 20px;
+    }
+
+.texto p {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 472px;
+    text-align: justify;
+}
+
+.autora p {
+    font-size: 14px;
+    color: #1E1E1E;
+    font-family: raleway, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Estilos para a aparência das notícias */
+  
+   .noticia {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+}
+/* Estilos para o conteúdo completo da notícia */
+#conteudoCompleto {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 490px;
+}
+
+
+
+
+
+
+
+
+

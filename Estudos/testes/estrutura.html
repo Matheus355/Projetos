@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centralizar os itens da lista */
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilos para o aside */
+aside {
+    float: left;
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+aside header {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    text-align: center; /* Centralizar o conteúdo */
+    margin-bottom: 20px;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px;
+}
+
+aside nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+aside footer {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+/* Estilos para o main */
+main {
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+
+main article {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main article header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+main article p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main article footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 20px;
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+/* Estilos para o rodapé */
+footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <header>
+            <h2>Categorias</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Categoria 1</a></li>
+                <li><a href="#">Categoria 2</a></li>
+                <li><a href="#">Categoria 3</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>Rodapé do aside</p>
+        </footer>
+    </aside>
+    
+    <main>
+        <header>
+            <h1>Artigos Recentes</h1>
+        </header>
+    
+        <article>
+            <header>
+                <h2>Título do Artigo 1</h2>
+            </header>
+            <img src="pinguim.jpg" alt="Pinguim">
+            <p>Conteúdo do Artigo 1...</p>
+            <footer>
+                <p>Rodapé do Artigo 1</p>
+            </footer>
+        </article>
+    
+        <article>
+            <header>
+                <h2>Título do Artigo 2</h2>
+            </header>
+            <img src="folclore.jpg" alt="Folclore">
+            <p>Conteúdo do Artigo 2...</p>
+            <aside class="rela">
+                <h3>Artigos Relacionados</h3>
+                <ul>
+                    <li><a href="#">Artigo Relacionado 1</a></li>
+                    <li><a href="#">Artigo Relacionado 2</a></li>
+                    <li><a href="#">Artigo Relacionado 3</a></li>
+                </ul>
+            </aside>
+            <footer>
+                <p>Rodapé do Artigo 2</p>
+            </footer>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Rodapé Geral do Site</p>
+    </footer>
+    
+</body>
+</html>

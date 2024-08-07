@@ -1,0 +1,185 @@
+/*-----------------------------------*\
+  #Hero
+\*-----------------------------------*/
+@media only screen and (min-width: 768px) { /* Para telas maiores */
+    .banner h2 {font-size: 75px; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+    .banner p {font-size: 28px; margin-bottom: 30px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); }}
+    
+@media only screen and (max-width: 767px) { /* Para telas menores */
+    .banner h2 { font-size: 60px; }
+    .banner p { font-size: 22px; margin-bottom: 20px; }}
+        
+#inicio {
+    background-image: url('https://images.pexels.com/photos/797797/pexels-photo-797797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+    background-size: cover; /* Ajusta o tamanho da plano de fundo ao elemento */
+    background-position: center; /* determina o comportamento do elemnto */
+    position: relative; 
+    background-attachment: fixed; /* faz com que a imagem role com o site */
+    height: 500px; /* Altura fixa para o banner */
+}
+#inicio::before {
+    content: ""; /*Esta linha define o conteúdo do elemento como uma string vazia. Isso é necessário para que o elemento seja renderizado.*/
+    background-color: rgba(0, 43, 151, 0.159); /* Cor de sobreposição semi-transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner { /* configurações do texto */
+    position: relative;
+    z-index: 1; /* Certifique-se de que o conteúdo fique na frente da sobreposição */
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    padding: 100px 0; /* Espaçamento interno */
+    background-color: rgba(0, 0, 0, 0.3); /* Cor de sobreposição semi-transparente */
+    width: 100%;
+    height: 60%;
+}
+.linha1 { 
+    width: 7cm;
+    border-top: 1px solid #fffefe;
+    margin: 0 auto 1px;
+}
+
+
+/*-----------------------------------*\
+  #chamada e citação
+\*-----------------------------------*/
+.chamada {
+    background-color: #6D9773;
+    text-align: center;
+    font-size: 39px;
+    color: #f9f9f9;
+    margin-top: 0%;
+    padding: 20px 0;
+}
+
+#citacao {
+    text-align: center;
+    padding: 10px 0;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 24px;
+    color: #195722d7;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+
+/*-----------------------------------*\
+  #processo de desenvolvimento
+\*-----------------------------------*/
+#processoDesenvolvimento {
+    text-align: center;
+    padding: 50px 1;
+}
+
+#processoDesenvolvimento h2 {
+    font-size: 36px;
+    color: #00763C;
+    margin-bottom: 20px;
+}
+
+.linha2 {
+    width: 9cm;
+    border-top: 2px solid gray;
+    margin: 0 auto 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.parte {
+    flex: 1;
+    max-width: 3000px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #535353;
+}
+
+.parte h3 {
+    font-size: 25px;
+    color: #00763C;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+/* Estilos para telas de tamanho médio */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container { flex-direction: colmn;}
+    .parte h3 { font-size: 29px; margin-top: 0%;
+    }}
+@media only screen and (max-width: 767px) { 
+    .container { flex-direction: column;.parte h3 { font-size: 29px; margin-top: 0%;
+    }}} /* Altera a direção do flexbox para coluna */
+   
+
+/*-----------------------------------*\
+  #Sobre
+\*-----------------------------------*/
+#recursos {
+    padding: 35px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #383434;
+}
+
+.titulo h2 {
+    font-size: 36px;
+    color: #347331d7;
+    position: relative;
+    display: inline-block;
+}
+
+.linha3 {
+    width: 700px;
+    height: 0.1px;
+    background-color: #0000007e;
+    bottom: -10px;
+    left: 0;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Estilos para telas de tamanho médio */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .linha3{
+        width: 70%;
+        height: 1,5px;
+        bottom: -10px;
+        }}
+
+/* para telas menores */
+@media only screen and (max-width: 767px) {
+    .titulo h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .linha3{
+    width: 70%;
+    height: 1,5px;
+    bottom: -10px;
+    }
+    .container p {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+
+
+
+

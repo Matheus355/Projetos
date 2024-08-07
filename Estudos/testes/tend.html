@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Incrível</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .blog-info {
+            width: 60%;
+            padding-right: 20px;
+        }
+
+        .blog-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .categories {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .categories:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .categories h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .categories li:hover {
+            color: #007bff;
+        }
+
+        .posters {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .post {
+            width: 48%;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .post h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .post p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .categories {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .post {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="blog-info">
+            <h1 class="blog-title">Meu Blog Incrível</h1>
+            <p class="description">Bem-vindo ao meu blog! Aqui você encontrará artigos interessantes sobre diversos temas.</p>
+        </div>
+        <div class="categories">
+            <h2>Categorias</h2>
+            <ul>
+                <li>Tecnologia</li>
+                <li>Viagens</li>
+                <li>Moda</li>
+                <li>Esportes</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="posters">
+            <div class="post">
+                <img src="https://via.placeholder.com/400" alt="Imagem 1">
+                <h3>Título do Post 1</h3>
+                <p>Descrição do post aqui...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400" alt="Imagem 2">
+                <h3>Título do Post 2</h3>
+                <p>Descrição do post aqui...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400" alt="Imagem 3">
+                <h3>Título do Post 3</h3>
+                <p>Descrição do post aqui...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400" alt="Imagem 4">
+                <h3>Título do Post 4</h3>
+                <p>Descrição do post aqui...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400" alt="Imagem 5">
+                <h3>Título do Post 5</h3>
+                <p>Descrição do post aqui...</p>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/400" alt="Imagem 6">
+                <h3>Título do Post 6</h3>
+                <p>Descrição do post aqui...</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
